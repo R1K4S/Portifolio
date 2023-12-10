@@ -222,6 +222,14 @@ body{
     border-radius: 1rem;
     box-shadow: 5px 10px var(--color7);
 }
+.gamedev .projetos .box a:hover{
+    padding: 0.6em;
+    background-color: var(--color3);
+    color: var(--color4);
+    text-decoration: none;
+    border-radius: 1rem;
+    box-shadow: 3px 7px var(--color7);
+}
 .gamedev .projetos .box .boximg img{
     max-width:200px;
     max-height:150px;
