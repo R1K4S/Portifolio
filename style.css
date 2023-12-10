@@ -1,0 +1,419 @@
+@charset "UTF-8";
+/* Fontes */
+@import url('https://fonts.cdnfonts.com/css/cavalery');
+@import url('https://fonts.cdnfonts.com/css/noto-serif-gujarati');
+@import url('https://fonts.cdnfonts.com/css/press-start');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    /* Paleta 1 */
+    --color1:#5b4a67;
+    --color2:#9d8d90;
+    --color3:#d0baa8;
+    --color4:#f3e9d4;
+    --color5:#b9d4b4;
+    --color6:#6aae9e;
+    --color7:#335e6a;
+    --color8:#37364e;
+    /* Paleta 2 */
+    --color9: #efd080;
+    --color10:#f09549;
+    --color11:#d8682e;
+    --color12:#f39b88;
+    --color13:#e9474e;
+    --color14:#b32342;
+    --color15:#e2e2e1;
+    --color16:#7fccdd;
+    --color17:#568dc9;
+    --color18:#4457a3;
+    /* Paleta 3 */
+    --color1a:#f19198;
+    --color2a:#f8c2b8;
+    --color3a:#73838c;
+    --color4a:#5b5d70;
+    --color5a:#272d3c;
+}
+
+/* Fundo */
+body{
+    padding: 0;
+    background-image: linear-gradient(var(--color6), var(--color8));
+    
+}
+
+/*Menu de Navegação*/
+.navbar{
+    width: 100%;
+    display: grid;
+    list-style: none;
+    background-color: var(--color7);
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 2em;
+    /*Fonte*/
+    font-family: 'Cavalery', sans-serif;                                   
+    font-size: 1.4em;
+}
+.navbar .logo{
+    color: var(--color4);
+}
+.navbar .itensmenu {
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar li{
+    margin-left: 1em;
+}
+.navbar a{
+    text-decoration: none;
+    color:var(--color4);
+    text-align: right;
+
+}
+.navbar  a:hover{
+    color: var(--color6);
+}
+
+/*Home*/
+.home .perfil{
+    position: relative;
+    height: 30em;
+    width: auto;
+    margin-top: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--color8);
+    border-radius: 6em;
+    font-family: 'Noto Serif Gujarati', sans-serif;
+}
+.home-text h1{
+    padding: 10%;
+    font-size: 3em;
+    margin-right: 1.2em;
+    color: var(--color4);
+}
+.homeimg img{
+    border: 1em solid var(--color8);
+    width: 30%;
+    height: auto;
+    position:absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-50%) translateX(20%);
+    border-radius: 50%;
+}
+
+/* Sobre Mim */
+.sobre{
+    margin-top: 3%;
+    padding: 5%;
+    background-color: var(--color8);
+    border-radius: 2em;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: 'Noto Serif Gujarati', sans-serif;
+}
+.sobre .sobre-text h1{
+    margin-bottom: 10%;
+    padding: 1dvh;
+    width: fit-content;
+    color: var(--color8);
+    background-color: var(--color4);
+    border-radius: 2em;
+    font-size: 2em;
+}
+.sobre .sobre-text p{
+    font-size: 1.5em;
+    color: var(--color4);
+}
+
+/* Game Dev */
+.gamedev{
+    margin-top: 3%;
+    padding: 5%;
+    background-color: var(--color8);
+    border-radius: 2em;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.gamedev h1{
+    text-align: center;
+    color: var(--color4);
+    font-size: 3em;
+    font-family: 'Press Start', sans-serif;
+}
+.gamedev .game-text h1{
+    margin-top: 3%;
+    background-color: var(--color10);
+    padding: 1dvh;
+    border-radius: 2em;
+    box-shadow: 0px 3px var(--color11);
+    
+    text-align: center;
+    color: var(--color4);
+    text-shadow:4px 6px var(--color11);
+    font-size: 2em;
+    font-family: 'Press Start', sans-serif;
+}
+.gamedev .game-text h2{
+    margin-top: 3%;
+    margin-bottom: 5%;
+    padding: 1dvh;
+    width:fit-content;
+    background-color: var(--color6);
+    box-shadow: 20px 20px var(--color7);
+
+    text-align: center;
+    color: var(--color4);
+    font-size: 2em;
+    font-family: 'Noto Serif Gujarati', sans-serif;
+}
+.gamedev .game-text p{
+    color: var(--color4);
+    font-size: 1.6em;
+    font-family: 'Noto Serif Gujarati', sans-serif;
+}
+.gamedev .projetos h1{
+    margin-top: 6%;
+    text-align: center;
+}
+.gamedev .projetos h2{
+    margin-top: 3%;
+
+    text-align: center;
+    color: var(--color4);
+    font-family: 'Noto Serif Gujarati', sans-serif;
+}
+.gamedev .projetos .bigbox{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center ;
+}
+.gamedev .projetos .box{
+    margin-top: 4em;
+    margin: 2%;
+    background: var(--color9);
+    padding: 2em;
+    border-radius: 0.5rem;
+    box-shadow: 0px 10px var(--color10);
+
+    text-align: center;
+}
+.gamedev .projetos .box p{
+    margin-top: 10%;
+    font-size: 1.5em;
+}
+.gamedev .projetos .box a{
+    padding: 0.6em;
+    background-color: var(--color4);
+    color: var(--color8);
+    text-decoration: none;
+    border-radius: 1rem;
+    box-shadow: 5px 10px var(--color7);
+}
+.gamedev .projetos .box .boximg img{
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    border-radius: 0.5rem;
+    border: 0.4em solid var(--color1);
+}
+
+
+/* Artista Digital */
+.art{
+    margin-top: 3%;
+    padding: 5%;
+    background-color:var(--color8);
+    border-radius: 2em;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: 'Noto Serif Gujarati', sans-serif;
+}
+.art .art-text h1{
+    text-align: center;
+    color: var(--color15);
+    text-shadow:4px 2px var(--color14);
+    font-size: 2em;
+    
+}
+.art .art-text h2{
+    margin-top: 3%;
+    padding: 1dvh;
+    background-color:  var(--color13);
+
+    text-align: center;
+    color: var(--color15);
+    text-shadow:6px 4px var(--color14);
+    font-size: 2em;
+    border-radius: 4em;
+}
+.art .art-text p{
+    margin-top: 5%;
+
+    color: var(--color15);
+    font-size: 1.6em;
+}
+
+.art .art-text li{
+    margin-left: 6%;
+    margin-top: 5%;
+
+    color: var(--color15);
+    font-size: 1.5em;
+}
+.art .art-text h3{
+    margin-top: 3%;
+
+    text-align: center;
+    color: var(--color15);
+    font-size: 2em;
+}
+.art .artprojetos h1{
+    margin-top: 2%;
+    text-align: center;
+    padding: 1dvh;
+    background-color:  var(--color13);
+    color: var(--color15);
+    text-shadow:4px 3px var(--color14);
+    font-size: 2em;
+    border-radius: 4em;
+}
+.art .artprojetos h2{
+    margin-top: 3%;
+    text-align: center;
+    padding: 1dvh;
+    color: var(--color15);
+    font-size: 1.3em;
+    border-radius: 4em;
+}
+.art .artprojetos .bigbox{
+    display:flex;
+    align-items: center;
+    justify-content: center ;
+}
+.art .artprojetos .bigbox .boximg img{
+    margin-top: 2em;
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    border-radius: 0.5rem;
+}
+.art .artprojetos .box{
+    margin: 2%;
+    padding: 0.6em;
+    background-color: var(--color4);
+    color: var(--color8);
+    text-decoration: none;
+    border-radius: 1rem;
+    box-shadow: 5px 10px var(--color7);
+    text-align: center;
+}
+.art .artprojetos .box a{
+    text-decoration: none;
+}
+
+/* Programador */
+.program{
+    margin-top: 3%;
+    padding: 5%;
+    background-color:  var(--color5a);
+    border-radius: 2em;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.program .program-text h1{
+    margin-top: 3%;
+    border-radius: 4em;
+    padding: 1dvh;
+    background-color:  var(--color7);
+
+    text-align: center;
+    color: var(--color4);
+    font-size: 2em;
+}
+.program .program-text .readme h2{
+    margin-top: 3%;
+    padding: 1dvh;
+    width: fit-content;
+    background-color: var(--color17);
+
+    color:var(--color15);
+    font-size: 2em;
+    box-shadow: 10px 10px var(--color18)
+}
+.program .program-text p{
+    margin-top: 3%;
+
+    color: var(--color15);
+    font-size: 1.6em;
+    font-family: 'Noto Serif Gujarati', sans-serif;
+}
+.program .program-text  h2{
+    margin-top: 3%;
+    padding: 1.2dvh;
+    width: fit-content;
+    background-color:  var(--color6);
+
+    box-shadow: 10px 10px var(--color7);
+    color: var(--color15);
+    font-size: 2em;
+}
+.program .program-text  li{
+    margin-top: 3%;
+    padding-top: 1vi;
+    padding-bottom: 1vi;
+    padding-left: 3vi;
+    padding-right: 3vi;
+    background-color: var(--color6);
+    width: fit-content;
+    border-radius: 1rem;
+    box-shadow: 10px 10px var(--color7);
+
+    color: var(--color4);
+    font-size: 1.5em;
+}
+
+/* Contato */
+.contato{
+    margin-top: 3%;
+    padding: 5%;
+    background-color:var(--color5a);
+    border-radius: 2em;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.contato .program-text{
+    font-size: 1.6em;
+    text-decoration: none;
+    color: var(--color15);
+}
+.contato .program-text li{
+    margin-top: 2%;
+    list-style: none;
+}
+.contato .program-text li:hover{
+    color: var(--color17);
+    text-decoration: none;
+}
+.contato .program-text a{
+    color: var(--color15);
+    text-decoration: none;
+}
+.contato .program-text a:hover{
+    color: var(--color17);
+    text-decoration: none;
+}
