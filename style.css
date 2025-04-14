@@ -12,56 +12,38 @@
 }
 
 :root{
-    /* Paleta 1 */
-    --color1:#5b4a67;
-    --color2:#9d8d90;
-    --color3:#d0baa8;
-    --color4:#f3e9d4;
-    --color5:#b9d4b4;
-    --color6:#6aae9e;
-    --color7:#335e6a;
-    --color8:#37364e;
-    /* Paleta 2 */
-    --color9: #efd080;
-    --color10:#f09549;
-    --color11:#d8682e;
-    --color12:#f39b88;
-    --color13:#e9474e;
-    --color14:#b32342;
-    --color15:#e2e2e1;
-    --color16:#7fccdd;
-    --color17:#568dc9;
-    --color18:#4457a3;
-    /* Paleta 3 */
-    --color1a:#f19198;
-    --color2a:#f8c2b8;
-    --color3a:#73838c;
-    --color4a:#5b5d70;
-    --color5a:#272d3c;
+    /* Paleta Principal */
+    --black:#070709;
+    --red:#AE1817;
+    --white:#F6F5F1;
+    /* Paleta Secundária */
+    --dirtyWhite:#EEDEC5;
+    --darkRed: #3A161D;
+    --gold: #EF8323;
 }
 
 /* Fundo */
 body{
     padding: 0;
-    background-image: linear-gradient(var(--color6), var(--color8));
-    
+    background-color: var(--black);
 }
 
-/*Menu de Navegação*/
+/*Navbar*/
 .navbar{
-    width: 100%;
-    display: grid;
-    list-style: none;
-    background-color: var(--color7);
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    padding: 2em;
-    /*Fonte*/
-    font-family: 'Cavalery', sans-serif;                                   
-    font-size: 1.4em;
-}
-.navbar .logo{
-    color: var(--color4);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+
+    height: 10%;
+    width: 55%;
+    border-radius:0px 0px 0px 34px;
+    padding-left:15px;
+padding-right:15px;
+    padding-top:19px;
+    padding-bottom:19px;
+
+    background-color:var(--red);
 }
 .navbar .itensmenu {
     display: flex;
@@ -71,13 +53,17 @@ body{
     margin-left: 1em;
 }
 .navbar a{
-    text-decoration: none;
-    color:var(--color4);
-    text-align: right;
-
+    position:absolute;
+    background-color:var(--white);
+    height:71px;
+    width:118px;
+    border-radius:0px 0px 10px 10px;
+    padding-left:4px;
+    padding-right:4px;
 }
 .navbar  a:hover{
-    color: var(--color6);
+    padding: 50px;
+    color: var(--dirtyWhite);
 }
 
 /*Home*/
