@@ -6,13 +6,16 @@
     <title>Portifolio_Rikas</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="src/imagens/Icon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=NTR&family=Nova+Slim&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <header>
     <!-- Menu de Navegação -->
     <ul class="navbar">
-        <div class="navbar_itens">
+        <div class="navbar-itens">
             <li><a href="#readme">README</a></li>
             <li><a href="#areas">Áreas</a></li>
             <li><a href="#ferramentas">Ferramentas</a></li>
@@ -21,18 +24,51 @@
         </ul>
         </div>
     </header>
-
+    <!-- Grafismo -->
+    <img src="src/imagens/Grafismo.png" class="graf">
+    <!-- Readme -->
     <section class="readme">
-        <img src="src/imagens/Grafismo.png" class="readme_graf">
-        <div class="readme_photo">
-            <img src="src/imagens/Photo.png" class="readme_img">
+        <div class="readme-photo">
+            <img src="src/imagens/Photo.png" class="readme-img">
             <div class="circulo"></div>
         </div>
-        <article class="readme_text">
-            <h1>Rikas</h1>
-            <h2>Desenvolvimento Web</h2>
+        <section class="readme-textbox">
+            <div class="readme-hbox">
+                <h1>RIKAS</h1>
+                <h2>Desenvolvedor Web</h2>
+            </div>
             <p>Meu nome é Ricardo, conhecido também por Rikas. Sou um estudante de Engenharia de Software na UnB, tenho amor por desenvolver soluções inovadoras e envolventes. Sou apaixonado na criação de jogos, design e na aplicação de princípios de gamificação para gerar experiências positivas e engajadoras. Minha meta é construir uma carreira que combine tecnologia, design e criatividade, impactando positivamente o mundo através de soluções inovadoras.</p>
-        </article>
+        </section>
+    </section>
+    <!-- Areas -->
+    <section class="Area-box">
+        <h1 alt="#areas"class="Area-titulo">Áreas</h1>
+        <div class="Area-textBox">
+            <article>
+                <h1>Game DEV</h1>
+                <hr>
+                <p>Desde a infância, sou apaixonado por jogos, o que me levou a não  apenas jogá-los, mas também a criar experiências imersivas por meio de  histórias e mundos ricos. Desenvolvi minhas habilidades em arte (desenho) e programação, com foco em jogos 2D, e agora estou expandindo meus conhecimentos para Unreal Engine 5, buscando atuar também no desenvolvimento 3D.</p>
+                <img src="src/imagens/Grafismo2.png">
+            </article>
+            <article>
+                <h1>Programador</h1>
+                <hr>
+            <p>Minha jornada na programação começou com o desenvolvimento de lógica de  programação para jogos digitais,  evoluindo posteriormente para outras  áreas como desenvolvimento web. Com o ingresso na faculdade, tive a  oportunidade de aprofundar meus conhecimentos através de projetos  acadêmicos e da minha atuação na Empresa Júnior Orcestra.  Atualmente, meu foco principal está no desenvolvimento Front-end e programação competitiva.</p>
+                <img src="src/imagens/Grafismo2.png">
+            </article>
+            <article>
+                <h1>Artista</h1>
+                <hr>
+                <p>Minha jornada artística começou na infância com o desenho  tradicional e evoluiu para uma especialização em três estilos distintos: Pixel Art para jogos digitais, vetorização para designs escaláveis e  ilustrações manuais que variam do estilo Rubber Hose animado a desenhos  arquitetônicos altamente detalhados. Essa diversidade de habilidades me  permitiu atuar como freelancer em diversos projetos, criando desde  logotipos e identidades visuais até assets para jogos e interfaces  digitais.</p>
+                <img src="src/imagens/Grafismo2.png">
+            </article>
+        </div>
+    </section>
+    <!--Ferramentas-->
+    <section class="ferramentas-box">
+        <h1>Ferramentas</h1>
+        <div id="ferramentas-container" class="ferramentas-container"></div>
+        <script src="script.js"></script>
     </section>
 </body>
 </html>
